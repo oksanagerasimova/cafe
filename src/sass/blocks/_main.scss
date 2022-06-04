@@ -1,0 +1,107 @@
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        align-items: center;
+        li {
+            list-style: none;
+        }
+        &_item {
+            color: #ffffffac;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 20px;
+        } :hover {
+            color: #fff;
+        }
+    }
+    
+    &__logo {
+        &_img {
+            width: 150px;
+            height: auto;
+            object-fit: contain
+        }
+    }
+}
+
+.mainpage {
+    position: relative;
+    &__bg {
+        position: absolute;
+        top: -281px;
+        right: -8px;
+        width: 32%;
+        height: auto;    
+    }
+    &__logo {
+        &_img {
+            width: 150px;
+            height: auto;
+            object-fit: contain  
+        }
+    }
+    &__subtitle {
+        margin: 0 0 40px;
+    }
+    &__wrapper {
+        margin: 100px auto;
+    }
+    &__txt {
+        color: #fff;
+        width: 600px;
+        padding-bottom: 40px;
+        font-size: 22px;
+        font-weight: 100;
+    }
+}
+
+
+.tabs {
+    margin: 150px auto;
+    &__btn {
+        z-index: 1;
+        position: absolute;
+        bottom: 20px;
+    }
+    .tabs__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_item {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #fff;
+            padding: 20px;
+        }
+        &_img {
+            position: absolute;
+            top: 135px;
+            right: 1px;
+            z-index: 0;
+            img {
+                width: 200px;
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+        &_title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        &_txt {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 100;
+        }
+    }
+}
